@@ -5,15 +5,14 @@
 import os
 import sys
 import time
-print('starting hackers tech black hat python framework')
+print('starting hackers tech black hat python framework',end=" ")
 for _ in range(10):
     for j in '/-\\|':
 
         sys.stdout.write("\b"+j)
         sys.stdout.flush()
         time.sleep(.08)
-
-
+os.system('clear')
 
 banner="""\033[1;32m
 ______________________________________________________
