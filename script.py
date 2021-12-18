@@ -98,8 +98,4 @@ print('want to use again y/n',end='')
 j=input('')
 if j =='Y' or j=='y' or j=='' or j.isspace()==True or j=='Yes' or j=='yes' or j=='YES':
     os.system('python3 script.py')
-hacker.close()
-hck.close()
-main.close()
-main_file.close()
 
