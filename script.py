@@ -19,8 +19,7 @@ ______________________________________________________
 |\033[31m   insta id - hackers__tech       (queries and etc)\033[32m |
 |\033[33m id may be offline because of privacy issues like  \033[32m |
 |\033[32m \033[34m instagram cookies etc\033[32m                             |
-|_\033[1;31muse_duck_duck_go_or_tor_browser\033[32m____________________|   
-           """
+|_\033[1;31muse_duck_duck_go_or_tor_browser\033[32m____________________|"""
 print(banner)
 import os
 try:
