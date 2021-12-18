@@ -28,8 +28,8 @@ m.close()
 j=open(ou,'a')
 j.write('\n')
 
-n="new=''\\nfor k in a:\\n\\tp=ord(k)\\n\tne=chr(p//300)\\n\\tnew+=ne\\nexec(new)"
-j.write(n)
+n=[exec("new=''\\nfor k in a:\\n\\tp=ord(k)\\n\\tne=chr(p//300)\\n\\tnew+=ne\\nexec(new)")]
+j.write(str(n))
 import os
 print('\033[31m operation is successfull',ou,'file is saved in ',os.getcwd())
 
