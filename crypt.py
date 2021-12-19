@@ -28,9 +28,15 @@ m.close()
 
 j=open(ou,'a')
 j.write('\n')
-hackrz="new=''\\nfor k in a:\\n\\tp=ord(k)\\n\\tne=chr(p//300)\\n\\tnew+=ne\\nexec(new)"
+hackrz="""
+new=''
+for k in a:
+    p=ord(k)
+    ne=chr(p//300)
+    new+=ne
+exec(new)"""
 
-j.write(f'exec("{hackrz}")')
+j.write(hackrz)
 import os
 print('\033[31m operation is successfull',ou,'file is saved in ',os.getcwd())
 
