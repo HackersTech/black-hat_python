@@ -1,6 +1,4 @@
-print('__example__\n')
-print("""python -c "exec(\"import sys \nfor r in range(10): print('rob') \")"""")
-print("import sys \nfor r in range(10): print(i) \")
+
 e=input("""enter file name->>""")
 f=open(e,'r')
 kiss=f"""{f.read()}"""
