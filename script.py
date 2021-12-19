@@ -83,11 +83,13 @@ except:
             print('\033[31m file is ready',output_file,'file is saved in ',os.system('pwd'))
 
         if k=='2' or k=='02':
-            print('one liner code is required for this encoder \n use "\\t" and "\\n" for tab indentation and new line ')
-            time.sleep(2)
-            for i in range(10):
+            for _ in range(10):
+                for j in '/-\\|':
+                    sys.stdout.write("\b"+j)
+                    sys.stdout.flush()
+                    time.sleep(.08)
+                    os.system('clear')
 
-                time.sleep(0.08)
             os.system('python3 crypt.py')
 
 
