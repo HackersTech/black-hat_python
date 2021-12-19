@@ -4,6 +4,8 @@
 - >More advance tool 
 - >Easy to use
 - >allows updating tool 
+- > antivirus ivasion
+- > msf python payload to FUD
 
 ---
 ![Ht](https://img.shields.io/badge/Made%20by-HackersTech-brightgreen)
