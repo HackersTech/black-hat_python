@@ -3,6 +3,9 @@
 # HACKERS TECH 
 
 import os
+os.system('clear')
+os.system('gem install lolcat')
+
 import sys
 import time
 print('starting hackers tech black hat python framework',end="  ")
@@ -39,7 +42,7 @@ except:
    
     try:
         print('|___')
-        i=int(input("\033[47m |__|->> \033[32m =\033[34m>>\033[0m"))
+        i=int(input("\033[47m |__|\033[1;33m->> \033[1;32m =\033[1;34m>>\033[0m"))
     except:
         print('\033[31m error occured invalid input') 
     if i==6:
