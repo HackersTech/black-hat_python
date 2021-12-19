@@ -38,8 +38,8 @@ except:
 |6)-->about""" )
    
     try:
-        print('|__')
-        i=int(input("\033[47;36m |__|->> \033[34m >>\033[0m"))
+        print('|___')
+        i=int(input("\033[47;36m |__|->> \033[32mm =\033[34m>>\033[0m"))
     except:
         print('\033[31m error occured invalid input') 
     if i==6:
