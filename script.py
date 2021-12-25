@@ -77,7 +77,7 @@ except:
         k=input("│_-\033[34m]>>")
         if k=='1' or k=='01':
             
-            os.system('python3 encoder.py > main.txt')
+            os.system('python3 encoder.py')
             hacker=open('main.txt','r')
             output_file=input('\033[38;5;22m enter name for output file with .py')
             with open(output_file,'w') as main_file:
