@@ -71,9 +71,10 @@ except:
     if i==5 or i==int('05'):
         os.system('clear')
         print('choose type')
-        print('|1)-> binascii encoding')
-        print('|2)-> chr and ord encoding ')
-        k=input("|_-\033[34m]>>")
+        print('│1)-> binascii encoding')
+        print('│2)-> chr and ord encoding ')
+        print('│3) lzma encoding')
+        k=input("│_-\033[34m]>>")
         if k=='1' or k=='01':
             
             os.system('python3 encoder.py > main.txt')
