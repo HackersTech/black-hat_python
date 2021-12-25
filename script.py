@@ -84,7 +84,7 @@ except:
                 main_file.write('import binascii \n')
                 main_file.write('binascii.unhexlify('+hacker.read()+')')
 
-            print('\033[31m file is ready',output_file,'file is saved in ',os.system('pwd'))
+            print('\033[31m file is ready',output_file,'file is saved in ',os.getcwd())
 
         if k=='2' or k=='02':
             for _ in range(10):
