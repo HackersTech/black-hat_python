@@ -33,11 +33,11 @@ try:
 except:
     print("")
     print("""\033[31m 
-|1)--> antivirus ivasion \033[32m
-|2)--> bash utility tools for hackers \033[33m
-|3)--> nmap scan (-A)\033[34m
-|4)--> exif photo metadata gather\033[37m
-|5)--> encrypter and decrypter for python files""")
+│1)--> antivirus ivasion \033[32m
+│2)--> bash utility tools for hackers \033[33m
+│3)--> nmap scan (-A)\033[34m
+│4)--> exif photo metadata gather\033[37m
+│5)--> encrypter and decrypter for python files""")
     os.system('bash about.sh')
    
     try:
