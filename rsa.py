@@ -4,14 +4,15 @@ try:
 except:
   print('module not found try pip3 install rsa or press y',end='')
   i=input()
-  if i=='y'
+  if i=='y' or i=="Y":
   os.system('pip3 install rsa ')
  
 
 publicKey, privateKey = rsa.newkeys(512)
+f=open(input('enter file name to be encrypted'),'r')
 
 # this is the string that we will be encrypting
-message = "hello geeks"
+message = f.read()
 
 # rsa.encrypt method is used to encrypt
 # string with public key string should be
@@ -20,14 +21,10 @@ message = "hello geeks"
 encMessage = rsa.encrypt(message.encode(),
             publicKey)
 
-print("original string: ", message)
-print("encrypted string: ", encMessage)
+j=input('enter output file name')
+j=open(j,'w')
+j.write('import rsa')
+j.write(f'pv={privateKey}')
+j.write("exec('decMessage = rsa.decrypt(encMessage, pv).decode()')")
 
-# the encrypted message can be decrypted
-# with ras.decrypt method and private key
-# decrypt method returns encoded byte string,
-# use decode method to convert it to string
-# public key cannot be used for decryption
-decMessage = rsa.decrypt(encMessage, privateKey).decode()
-
-print("decrypted string: ", decMessage)
+print('success')
