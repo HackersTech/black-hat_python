@@ -96,7 +96,7 @@ except:
 
             os.system('python3 crypt.py')
        
-    if=='3' or k=="03":
+    if k=='3' or k=="03":
            os.system('python3 lzma.py')
 
 
