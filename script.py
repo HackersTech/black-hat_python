@@ -37,7 +37,7 @@ except:
 │2)--> bash utility tools for hackers \033[33m
 │3)--> nmap scan (-A)\033[34m
 │4)--> exif photo metadata gather\033[37m
-│5)--> encrypter and decrypter for python files""")
+│5)--> encrypter for python files""")
     os.system('bash about.sh')
    
     try:
