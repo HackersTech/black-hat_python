@@ -1,6 +1,6 @@
 #
 import binascii
-en=input("\033[38;5;22;48;5;227m python payload or virus file name enter ->> ")
+en=input("\033[38;5;22;48;5;227m python payload or virus file name enter ->>\033[0m ")
 
 
 with open(en,'r') as f:
