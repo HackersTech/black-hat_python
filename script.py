@@ -73,7 +73,8 @@ except:
         print('choose type')
         print('│1)-> binascii encoding')
         print('│2)-> chr and ord encoding ')
-        print('│3) lzma encoding')
+        print('│3)-> lzma encoding')
+        print('|4)-> rsa encrypt')
         k=input("│_-\033[34m]>>")
         if k=='1' or k=='01':
             
@@ -98,7 +99,9 @@ except:
        
     if k=='3' or k=="03":
            os.system('python3 lzma.py')
-
+            
+    if k=='4' or k=="04":
+           os.system('python3 rsa.py')
 
 
         
