@@ -4,8 +4,10 @@
 
 import os
 os.system('clear')
-os.system('gem install lolcat')
-
+try:
+    os.system('gem install lolcat')
+except:
+    print('need sudo permisssion to install requirements')
 import sys
 import time
 print('starting hackers tech black hat python framework',end="  ")
@@ -73,11 +75,12 @@ except:
     if i==5 or i==int('05'):
         os.system('clear')
         print('choose type')
-        print('│1)-> binascii encoding')
+        print('│1)->\033[32m binascii encoding')
         print('│2)-> chr and ord encoding ')
-        print('│3)-> lzma encoding')
-        print('|4)-> rsa encrypt')
-        k=input("│_-\033[34m]>>")
+        print('│3)->\033[33m lzma encoding')
+        print('|4)->\033[31m rsa encrypt')
+        print('|5) codecs encypter ')
+        k=input("│_-\033[34m>>")
         if k=='1' or k=='01':
             
             os.system('python3 encoder.py')
@@ -99,11 +102,14 @@ except:
 
             os.system('python3 crypt.py')
        
-    if k=='3' or k=="03":
+        if k=='3' or k=="03":
            os.system('python3 lzma.py')
             
-    if k=='4' or k=="04":
+        if k=='4' or k=="04":
            os.system('python3 rsa.py')
+        if k=='5' or k=="05":
+           os.system('python3 codecs.py')
+
 
 
         
