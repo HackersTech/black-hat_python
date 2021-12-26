@@ -41,6 +41,8 @@ except:
     os.system('bash about.sh')
    
     try:
+        print('|')
+        print('|')
         print('└──=',end='')
         i=int(input("\033[47m ──=>\033[1;33m->> \033[1;32m =\033[1;34m=>\033[0m"))
     except:
