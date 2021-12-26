@@ -75,10 +75,10 @@ except:
     if i==5 or i==int('05'):
         os.system('clear')
         print('choose type')
-        print('│1)->\033[32m binascii encoding')
-        print('│2)-> chr and ord encoding ')
-        print('│3)->\033[33m lzma encoding')
-        print('|4)->\033[31m rsa encrypt')
+        print('│1)->\033[32m binascii encoding\033[0m')
+        print('│2)-> chr and ord encoding\033[0m')
+        print('│3)->\033[33m lzma encoding\033[0m')
+        print('|4)->\033[31m rsa encrypt\033[0m')
         print('|5) codecs encypter ')
         k=input("│_-\033[34m>>")
         if k=='1' or k=='01':
