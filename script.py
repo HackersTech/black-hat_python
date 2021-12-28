@@ -4,10 +4,7 @@
 
 import os
 os.system('clear')
-try:
-    os.system('gem install lolcat')
-except:
-    print('need sudo permisssion to install requirements')
+
 import sys
 import time
 print('starting hackers tech black hat python framework',end="  ")
@@ -47,8 +44,15 @@ except:
         print('|')
         print('└──=',end='')
         i=int(input("\033[47m ──=>\033[1;33m->> \033[1;32m =\033[1;34m=>\033[0m"))
+        import os
+        username=os.system("whoami")
+        if username is not "root":
+            print( "You aren't root cant install requirements")
+        else:
+            print('installing requirements')
+            os.system('gem install lolcat')
     except:
-        print('\033[31m error occured invalid input') 
+        print('\033[32m \nerror occured invalid input') 
     if i==6:
         print("""hi thanks for using this tool \n
         and get me on instagram id -\033[38;5;44m hackers__tech 
