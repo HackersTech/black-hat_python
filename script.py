@@ -88,7 +88,7 @@ except:
             output_file=input('\033[38;5;22m enter name for output file with .py')
             with open(output_file,'w') as main_file:
                 main_file.write('import binascii \n')
-                main_file.write('exec("binascii.unhexlify('+hacker.read()+')")')
+                main_file.write('exec(binascii.unhexlify('+hacker.read()+'))')
 
             print('\033[31m file is ready',output_file,'file is saved in ',os.getcwd())
 
