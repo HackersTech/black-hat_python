@@ -30,6 +30,16 @@ try:
         print("not supported in window run in linux ")
   
 except:
+    import os
+    username=os.system("whoami")
+    if username is not "root":
+        print( "You aren't root cant install requirements")
+        import time 
+        time.sleep(1)
+        os.system('clear')
+    else:
+        print('installing requirements')
+        os.system('gem install lolcat')
     print("")
     print("""\033[31m 
 │1)--> antivirus ivasion \033[32m
@@ -44,13 +54,7 @@ except:
         print('|')
         print('└──=',end='')
         i=int(input("\033[47m ──=>\033[1;33m->> \033[1;32m =\033[1;34m=>\033[0m"))
-        import os
-        username=os.system("whoami")
-        if username is not "root":
-            print( "You aren't root cant install requirements")
-        else:
-            print('installing requirements')
-            os.system('gem install lolcat')
+
     except:
         print('\033[32m \nerror occured invalid input') 
     if i==6:
